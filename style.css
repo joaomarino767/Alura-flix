@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital@0;1&display=swap');
+
+:root {
+    --cor-fundo: #1C1F2A;
+    --cor-fundo2:#00224d;
+    --cor-escrita:#A0153E;
+    --cor-cabecalho: rgb(42, 122, 228);
+    --borda-cabecalho:rgb(42, 122, 228);
+    --cor-titulo: #FF2D55;
+    --hover-thumbnail:blue;
+
+    --titulo-escrito:'Krona One', sans-serif;
+    --fonte-normal:"Montserrat", sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--cor-fundo2);
+    color: var(--cor-escrita);
+    font-family: var(--fonte-normal);
+    margin-bottom: 3%;
+}
+
+.cabecalho{
+    text-align: center;
+    padding: 1%;
+    font-size: 32px;
+    border-bottom: solid 2px var(--borda-cabecalho);
+    color: var(--cor-cabecalho);
+    font-family: var(--fonte-normal);
+    background-color: var(--cor-fundo);
+    
+}
+
+
+.corpo__aranha {
+    color:var(--cor-titulo) ;
+    display: flex;
+    padding: 3%;
+    align-items: center;
+    gap: 60px;
+    padding-bottom: 6%;
+}
+
+.titulo{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.titulo__titulo{
+    font-family: var(--titulo-escrito);
+    font-weight: 100;
+    font-size: 35px;
+}
+
+.aranha {
+    font-size: 24px;
+    font-family: var(--fonte-normal);
+    text-align: center;
+    padding-left: 55%;
+}
+
+.youtube{
+    border-radius: 5px;
+}
+
+.filmes{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.titulo__2{
+    text-align: center;
+    font-size: 32px;
+    padding-bottom: 2% ;
+}
+
+
+    .thumbnail {
+    display: flex;
+    flex-wrap: nowrap;         /* ❗ impede quebra de linha */
+    overflow-x: auto;          /* ❗ habilita rolagem horizontal */
+    gap: 20px;
+    padding: 2%;
+    padding-bottom: 2%;
+    }
+
+.thumbnail img {
+    opacity: 0.5;
+    height: 200px;
+    border-radius: 6%;
+}
+
+.thumbnail img:hover{
+    opacity: 1.5;
+    border: 1px solid var(--hover-thumbnail);
+}
